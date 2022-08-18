@@ -9,7 +9,7 @@ This function allow adding new value to the binary tree
 - ```value``` {int} required input  
 
 **Example**
-```sh
+```java
     BinaryTree x = new BinaryTree();
     x.add(4);
     
