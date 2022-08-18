@@ -17,7 +17,7 @@ This function allow adding new item to the binary tree
     
     // Add value 4 of type integer to the binary tree
 ```
-
+<hr>
 
 **traverseInOrder() : Void**
 
