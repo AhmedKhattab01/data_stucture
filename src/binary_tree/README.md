@@ -38,6 +38,7 @@ This function print out the binary tree list in an in-order form
     // => 1 4 8
 ```
 
+<hr>
 
 **traversePreOrder() : Void**
 
@@ -58,6 +59,7 @@ This function print out the binary tree list in a pre-order form
     // => 4 1 8
 ```
 
+<hr>
 
 **traversePostOrder() : Void**
 
@@ -77,5 +79,28 @@ This function print out the binary tree list in a post-order form
     x.traversePostOrder(bt.root);
     // => 1 8 4
 ```
+
+<hr>
+
+**containsNode() : Boolean**
+
+This function return a boolean value and used to check if a given item is exist in the list or not, return true if the list contain the item.
+
+**Params**
+- ```value``` {int} required input  
+
+**Example**
+```java
+    BinaryTree x = new BinaryTree();
+    
+    x.add(4);
+    x.add(1);
+    x.add(8);
+    
+    System.out.println(bt.containsNode(4));
+    // => true
+```
+
+<hr>
 
 
