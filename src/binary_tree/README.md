@@ -3,6 +3,7 @@ BinaryTree class is used to allow coder to create and use a binary tree with mul
 
 ## Usage
 **Add() : Void**
+
 This function allow adding new value to the binary tree
 **Params**
 - ```value``` {int} required input  
