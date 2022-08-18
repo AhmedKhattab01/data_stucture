@@ -18,6 +18,7 @@ This function allow adding new item to the binary tree
     // Add value 4 of type integer to the binary tree
 ```
 
+
 **traverseInOrder() : Void**
 
 This function print out the binary tree list in an in-order form 
@@ -37,9 +38,10 @@ This function print out the binary tree list in an in-order form
     // => 1 4 8
 ```
 
+
 **traversePreOrder() : Void**
 
-This function print out the binary tree list in an pre-order form 
+This function print out the binary tree list in a pre-order form 
 
 **Params**
 - ```node``` {Node} required input  
@@ -55,3 +57,25 @@ This function print out the binary tree list in an pre-order form
     x.traversePreOrder(bt.root);
     // => 4 1 8
 ```
+
+
+**traversePostOrder() : Void**
+
+This function print out the binary tree list in a post-order form 
+
+**Params**
+- ```node``` {Node} required input  
+
+**Example**
+```java
+    BinaryTree x = new BinaryTree();
+    
+    x.add(4);
+    x.add(1);
+    x.add(8);
+    
+    x.traversePostOrder(bt.root);
+    // => 1 8 4
+```
+
+
