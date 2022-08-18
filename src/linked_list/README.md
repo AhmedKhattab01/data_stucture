@@ -1,128 +1,161 @@
-# Binary Tree
-BinaryTree class is used to allow coder to create and use a binary tree with multiple pre implemented methods such as
-(add, remove, Traverse in-order,etc...)
+# Linked List
+LinkedList class is used to allow coder to create and use a Linked List with multiple pre implemented methods such as
+(addHead, addTail, removeHead,etc...)
 
 ## Usage
-**add() : Void**
+**addHead() : Void**
 
-This function allow adding new item to the binary tree
+This function add new item to the head of the Linked List.
 
 **Params**
-- ```value``` {int} required input  
+- ```value``` {T} required input  // Generic
 
 **Example**
 ```java
-    BinaryTree x = new BinaryTree();
-    x.add(4);
+    DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+    ints.addHead(1);
+    System.out.println(ints.getHead().value);
     
-    // Add value 4 of type integer to the binary tree
+    // => 1
 ```
 <hr>
 
-**traverseInOrder() : Void**
+**addTail() : Void**
 
-This function print out the binary tree list in an in-order form 
+This function add new item to the tail of the Linked List.
 
 **Params**
-- ```node``` {Node} required input  
+- ```value``` {T} required input  // Generic
 
 **Example**
 ```java
-    BinaryTree x = new BinaryTree();
+    DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+    ints.addTail(1);
+    System.out.println(ints.getTail().value);
     
-    x.add(4);
-    x.add(1);
-    x.add(8);
-    
-    x.traverseInOrder(bt.root);
-    // => 1 4 8
+    // => 1
 ```
 
 <hr>
 
-**traversePreOrder() : Void**
+**removeFirst() : Void**
 
-This function print out the binary tree list in a pre-order form 
-
-**Params**
-- ```node``` {Node} required input  
+This function remove the head of the list
 
 **Example**
 ```java
-    BinaryTree x = new BinaryTree();
-    
-    x.add(4);
-    x.add(1);
-    x.add(8);
-    
-    x.traversePreOrder(bt.root);
-    // => 4 1 8
+        DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+
+        ints.addHead(1);
+        System.out.println(ints.getHead().value);
+        ints.removeFirst();
+        System.out.println(ints.getHead().value);
+        
+        // => 1   
+        // => null
 ```
 
 <hr>
 
-**traversePostOrder() : Void**
+**removeLast() : Void**
 
-This function print out the binary tree list in a post-order form 
-
-**Params**
-- ```node``` {Node} required input  
+This function remove the head of the list
 
 **Example**
 ```java
-    BinaryTree x = new BinaryTree();
-    
-    x.add(4);
-    x.add(1);
-    x.add(8);
-    
-    x.traversePostOrder(bt.root);
-    // => 1 8 4
+        DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+
+        ints.addTail(1);
+        System.out.println(ints.getTail().value);
+        ints.removeLast();
+        System.out.println(ints.getTail().value);
+
+        // => 1   
+        // => null
 ```
 
 <hr>
 
-**containsNode() : Boolean**
+**contains() : Boolean**
 
 This function return a boolean value and used to check if a given item is exist in the list or not, return true if the list contain the item.
 
 **Params**
-- ```value``` {int} required input  
+- ```value``` {T} required input  // Generic type
 
 **Example**
 ```java
-    BinaryTree x = new BinaryTree();
-    
-    x.add(4);
-    x.add(1);
-    x.add(8);
-    
-    System.out.println(bt.containsNode(4));
-    // => true
+        DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+        
+        ints.addHead(2);
+        System.out.println(ints.contains(2));
+        System.out.println(ints.contains(3));
+        
+        // => true
+        // => false
 ```
 
 <hr>
 
-**delete() : Void**
+**remove() : Boolean**
 
-A void function that delete given item from the list, it will check first if the item exist then delete it
+This function return a boolean value and used to check if a given item is exist in the list or not, if it exists then it will removed from the list.
 
 **Params**
-- ```value``` {int} required input  
+- ```value``` {T} required input  // Generic type
 
 **Example**
 ```java
-    BinaryTree x = new BinaryTree();
-    
-    x.add(4);
-    x.add(1);
-    x.add(8);
-    
-    System.out.println(bt.containsNode(1));
-    bt.delete(1);
-    System.out.println(bt.containsNode(1));
-    // => true
-    // => false
+        DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+
+        ints.addHead(2);
+        ints.addHead(5);
+        ints.addHead(6);
+
+        ints.remove(5);
+
+        System.out.println(ints.contains(5));
+        
+        // => false
+```
+
+<hr>
+
+
+**getEnumerate() : Void**
+
+This function print out all the list items in original order from head to tail
+
+**Example**
+```java
+        DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+
+        ints.addTail(2);
+        ints.addTail(5);
+        ints.addTail(6);
+
+        ints.getEnumerate();
+        
+        // => 2 5 6       
+```
+
+<hr>
+
+**getEnumerateReverse() : Void**
+
+This function print out all the list items in reverse order from tail to head
+
+**Example**
+```java
+        DoublyLinkedList<Integer> ints = new DoublyLinkedList<Integer>();
+
+        ints.addHead(2);
+        ints.addHead(5);
+        ints.addHead(6);
+
+        ints.getEnumerateReverse();
+        
+        // => 2 5 6       
 ```
 
 <hr>
