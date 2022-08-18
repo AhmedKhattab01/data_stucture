@@ -103,4 +103,26 @@ This function return a boolean value and used to check if a given item is exist 
 
 <hr>
 
+**delete() : Void**
 
+A void function that delete given item from the list, it will check first if the item exist then delete it
+
+**Params**
+- ```value``` {int} required input  
+
+**Example**
+```java
+    BinaryTree x = new BinaryTree();
+    
+    x.add(4);
+    x.add(1);
+    x.add(8);
+    
+    System.out.println(bt.containsNode(1));
+    bt.delete(1);
+    System.out.println(bt.containsNode(1));
+    // => true
+    // => false
+```
+
+<hr>
