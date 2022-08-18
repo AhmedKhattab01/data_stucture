@@ -1,5 +1,6 @@
 # Binary Tree
-BinaryTree class is used to allow coder to create and use a binary tree with multiple pre implemented methods such as (add, remove, Traverse in-order,etc...)
+BinaryTree class is used to allow coder to create and use a binary tree with multiple pre implemented methods such as
+(add, remove, Traverse in-order,etc...)
 
 ## Usage
 **Add() : Void**
