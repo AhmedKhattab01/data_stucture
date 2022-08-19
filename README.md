@@ -5,7 +5,7 @@ Inside every package inside the "src" file there is another README.md file that 
 
 </hr>
 
-# This Project contains this algorithms>
+This Project contains this algorithms
 
 - Linked List
 - Sorted List
