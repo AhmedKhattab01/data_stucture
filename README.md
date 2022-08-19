@@ -1,5 +1,5 @@
-# data_stucture
-A project that contain data structure algorithms (Linked list, Sorted List, etc....)
+# Data Structure
+A project that contain data structure algorithms such as (Linked list, Sorted List, etc....)
 
 <hr>
 
